@@ -19,9 +19,11 @@ This repository provides an implementation of semantic segmentation using PyTorc
 Create a virtual environment and install required packages.
 
 ```bash
-conda create -n semantic-segmentation python=3.8
+conda create -n semantic-segmentation
 conda activate semantic-segmentation
-conda install pytorch torchvision -c pytorch
+# Check your CUDA version and install PyTorch accordingly.
+# In my case, its CUDA 11.7
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 pip install opencv-python
 ```
 

@@ -1,0 +1,36 @@
+# working directory
+work_dir: 'output/'
+# Weights & Biases
+wandb:
+  WANDB_API_KEY: <your key>
+  WANDB_PROJECT_NAME: <your project name>
+  WANDB_ENTITY: <your entity>
+# path dataset 
+input:
+  train_images: <train images path>
+  train_mask: <train mask path>
+
+  test_images: <test images path>
+  test_mask: <test mask path>
+
+image_shape:
+  width: <width>
+  height: <height>
+
+# Refer to https://smp.readthedocs.io/en/latest/
+model_name: "Unet" # Choice DeepLabV3Plus, PSPNet, UnetPlusPlus, Unet, Linknet, FPN, PAN, PSPNet
+encoder_name: "resnet101" # Refer to https://smp.readthedocs.io/en/latest/encoders.html
+num_classes: 1
+activation: "sigmoid" # Choice "softmax", "sigmoid", None
+encoder_weights: "None" # Choice "None", "imagenet", "ssl", "noisy-student", "advprop"
+epoch: 200
+batch_size: 8
+num_workers: 8
+
+optimizer: "AdamW" # Choice Adam, NAdam, SGD 
+loss_function: "DiceBceRMILoss" # Choice DiceBceLoss, jaccard_loss, LovaszTverskyLoss, RMILoss
+
+augmentation: True # default True
+
+
+

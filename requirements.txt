@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+sklearn
+opencv-python
+albumentations
+tqdm
+Pillow
+easydict
+pycocotools
+wandb
+
+
