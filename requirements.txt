@@ -9,5 +9,6 @@ Pillow
 easydict
 pycocotools
 wandb
-
-
+segmentation-models-pytorch
+easydict
+simplejson
