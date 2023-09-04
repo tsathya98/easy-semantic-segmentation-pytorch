@@ -1,5 +1,3 @@
-Here is an updated README.md with more options and details provided in Markdown format:
-
 # Semantic Segmentation PyTorch
 
 This repository provides an implementation of semantic segmentation models using PyTorch.
